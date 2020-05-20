@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="lessons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="checkBox.css">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 10px;
+        }
+
+    </style>
+    <style>
+        .timeVideo {
+            font-size: 12px;
+            opacity: 0.5;
+            margin-left: 2em;
+            margin-right: 0;
+        }
+        .videoDetails {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden">
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white ">
+        <a class="navbar-brand" href="#">DUMMY WEBSITE NAME</a>
+        <form class="navbarright ml-auto">
+            <button  class="btn" style="background-color: white; border-radius: 10px; border: 1px solid;box-shadow: gray()"><a href="/logout">Logout</a></button>
+            <button  class="btn" style="background-color: white; border-radius: 10px; border: 1px solid;box-shadow: gray()"><a>Select Class</a></button>
+        </form>
+
+    </nav>
+</div>
+<div style="position: relative" >
+    <nav class="navbar" style="background-color: blue">
+        <div class="mr-auto">
+            <a class="navbar-brand " href="lesssons.html">Lessons</a>
+            <a class="navbar-brand " href="assignmentMenu.html">Assignment</a>
+            <a class="navbar-brand " href="liveStreamingMenu.html">Live Streaming</a>
+        </div>
+    </nav>
+</div>
+<div style="background-color: #E5E5E5">
+    <img src="lesson_background1.png" style="margin-top: 50px;
+margin-left: -1198px;
+width: 1920px;
+height: 237px;" alt="...">
+    <img src="lesson_background.png" style=" margin-top: 50px;
+width: 1920px;
+height: 237px;
+position: absolute">
+</div>
+<div style="margin-left: 100px; margin-top: 100px">
+    <h3>Assignment of Subject Name</h3>
+</div>
+<div class="card-deck row" style="margin-left: 100px;margin-right: 100px ;margin-top: 50px">
+    <div class="card col-ms-2" name="video" >
+        <div class="card-body" style="background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #0000003B"  onclick="window.location.href='VideoViewOnline.html'">
+            <p style="margin-top: 2px;margin-left: 2px; text-align: left; font-size: 14px;font-family: Regular Roboto;letter-spacing: 0px;color: #C0C0C0;opacity: 1;display: inline-block">Video</p>
+            <img src="chapter1.png" class="videoplay center" style="display: block; margin-left: auto; margin-right: auto;width: 121px;height: 101px;">
+            <div class="videoDetails">
+                <p>Name of the subtopic</p>
+                <p class="timeVideo">2min</p>
+            </div>
+        </div>
+        <div class="round">
+            <input class="tickcomp" type="checkbox" >
+            <label for="checkbox"></label>
+        </div>
+    </div>
+    <div class="card col-ms-2" name="video" >
+        <div class="card-body" style="background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #0000003B"  onclick="window.location.href='VideoView.html'">
+            <p style="margin-top: 2px;margin-left: 2px; text-align: left; font-size: 14px;font-family: Regular Roboto;letter-spacing: 0px;color: #C0C0C0;opacity: 1;display: inline-block">Video</p>
+            <img src="chapter1.png" class="videoplay center" style="display: block; margin-left: auto; margin-right: auto;width: 121px;height: 101px;">
+            <div class="videoDetails">
+                <p>Name of the subtopic</p>
+                <p class="timeVideo">2min</p>
+            </div>
+        </div>
+        <div class="round">
+            <input class="tickcomp" type="checkbox">
+            <label for="checkbox"></label>
+        </div>
+    </div>
+    <div class="card col-ms-2" name="video" >
+        <div class="card-body" style="background: #FFFFFF 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #0000003B"  onclick="window.open('sample.pdf', '_blank');" data-target="_blank">
+            <p style="margin-top: 2px;margin-left: 2px; text-align: left; font-size: 14px;font-family: Regular Roboto;letter-spacing: 0px;color: #C0C0C0;opacity: 1;display: inline-block">PDF</p>
+            <img src="chapter1.png" class="videoplay center" style="display: block; margin-left: auto; margin-right: auto;width: 121px;height: 101px;">
+            <div class="videoDetails">
+                <p>Name of the subtopic</p>
+            </div>
+        </div>
+        <div class="round">
+            <input class="tickcomp" type="checkbox" id="checkbox" />
+            <label for="checkbox"></label>
+        </div>
+    </div>
+    <div class="card col-ms-2"   onclick="window.location.href='mcq.html'">
+
+        <div class="card-body" style="background: transparent linear-gradient(56deg, #F792AB 0%, #FCE584 100%) 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #0000003B;">
+            <p style="margin-top: 2px;margin-left: 2px; text-align: left; font-size: 14px;font-family: Regular Roboto;letter-spacing: 0px;color: white;opacity: 1;display: inline-block">4 Tests|120 Questions</p>
+
+            <img src="test1.png" class="center" style="display: block; margin-left: auto; margin-right: auto;width: 116px;height: 100px;">
+            <p>Practice Test</p>
+        </div>
+    </div><div class="card col-ms-2" onclick="window.location.href='mcq.html'">
+    <div class="card-body" style="background: transparent linear-gradient(56deg, #F792AB 0%, #FCE584 100%) 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #0000003B;">
+        <p style="margin-top: 2px;margin-left: 2px; text-align: left; font-size: 14px;font-family: Regular Roboto;letter-spacing: 0px;color: white;opacity: 1;display: inline-block">4 Tests|120 Questions</p>
+
+        <img src="test1.png" class="center" style="display: block; margin-left: auto; margin-right: auto;width: 116px;height: 100px;">
+        <p>Practice Test</p>
+    </div>
+</div>
+</div>
+<br><br><br><br><br><br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white; bottom: 0; border: 1px solid grey ; width: 100%">
+    <a class="navbar-brand ml-auto" href="#" >DUMMY WEBSITE NAME</a>
+</nav>
+</body>
+</html>

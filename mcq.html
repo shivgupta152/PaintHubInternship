@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="lessons.css">
+    <script src="timer.js"></script>
+    <script src="mcq.js"></script>
+</head>
+<body style="background: #F7F7F7" >
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white">
+
+        <a class="navbar-brand" href="#">DUMMY WEBSITE NAME</a>
+
+        <form class="navbarright ml-auto">
+            <button  class="btn" ><a >Select Class</a></button>
+
+        </form>
+
+    </nav>
+</div>
+<div style="position: relative" >
+    <nav class="navbar" style="background-color: blue">
+        <div class="mr-auto">
+            <a class="navbar-brand " href="lesssons.html">Lessons</a>
+            <a class="navbar-brand " href="assignmentMenu.html">Assignment</a>
+            <a class="navbar-brand " href="liveStreamingMenu.html">Live Streaming</a>
+        </div>
+    </nav>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </h5>
+            </div>
+            <div class="modal-body">
+            <h4>Click to start the test</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="countdown(10)">Start Test</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: white" >
+    <nav style ="margin-left: 100px">
+        <br>
+        <br>
+        <h5 style="margin-left: 100px">Chapter Name </h5>
+        <div>
+            <h3 style="display: inline;margin-left: 100px" >Name of the Test </h3>
+            <div  class="float-right" id="mcqtimer" style="margin-right: 200px">10:00</div>
+        </div>
+    </nav>
+</div>
+<br><br>
+<div class="row" style="margin-left: auto;margin-right: auto ; justify-content: center">
+        <div class="card-mcq">
+            <div class="card-title" style="margin-left: 50px ; margin-right: 50px">
+                <br>
+                <p class ="ques">Question 1</p>
+                <p>The 'Dalong Village' covering an area of 11.35 sq. km. has recently (May 2017) been declared as Biodiversity Heritage Site under Section 37(1) of Biological Diversity Act, 2002. The village is situated in the Indian State of -</p>
+                <div class="radio-choice">
+                    <input type="radio" id="1A" value="A" name="1">
+                    <label for="1A">A</label>
+                    <p class="options">Manipur</p>
+                    <hr>
+                    <input type="radio" id="1B" value="B" name="1">
+                    <label for="1B">B</label>
+                    <p class="options">Madhya Pradesh </p><span class="ans"></span>
+                    <br>
+                    <hr>
+                    <input type="radio" id="1C" value="C" name="1">
+                    <label for="1C">C</label>
+                    <p class="options">Mizoram</p>
+                    <br>
+                    <hr>
+                    <input type="radio" id="1D" value="D" name="1">
+                    <label for="1D">D</label>
+                    <p class="options">  Maharashtra</p>
+                </div>
+            </div>
+        </div>
+    <div class="card-mcq">
+        <div class="card-title" style="margin-left: 50px ; margin-right: 50px">
+            <br>
+            <p class ="ques">Question 2</p>
+            <p>The 'Dalong Village' covering an area of 11.35 sq. km. has recently (May 2017) been declared as Biodiversity Heritage Site under Section 37(1) of Biological Diversity Act, 2002. The village is situated in the Indian State of -</p>
+            <div class="radio-choice">
+                <input type="radio" id="2A" value="A" name="2">
+                <label for="2A">A</label>
+                <p class="options">    Manipur</p>
+                <hr>
+                <input type="radio" id="2B" value="B" name="2">
+                <label for="2B">B</label>
+                <p class="options">    Madhya Pradesh </p><span class="ans"></span>
+                <br>
+                <hr>
+                <input type="radio" id="2C" value="C" name="2">
+                <label for="2C">C</label>
+                <p class="options"> Mizoram</p>
+                <br>
+                <hr>
+                <input type="radio" id="2D" value="D" name="2">
+                <label for="2D">D</label>
+                <p class="options">  Maharashtra</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-mcq">
+        <div class="card-title" style="margin-left: 50px ; margin-right: 50px">
+            <br>
+            <p class ="ques">Question 3</p>
+            <p>The 'Dalong Village' covering an area of 11.35 sq. km. has recently (May 2017) been declared as Biodiversity Heritage Site under Section 37(1) of Biological Diversity Act, 2002. The village is situated in the Indian State of -</p>
+            <div class="radio-choice">
+                <input type="radio" id="3A" value="A" name="3">
+                <label for="3A">A</label>
+                <p class="options">    Manipur</p>
+                <hr>
+                <input type="radio" id="3B" value="B" name="3">
+                <label for="3B">B</label>
+                <p class="options">    Madhya Pradesh </p><span class="ans"></span>
+                <br>
+                <hr>
+                <input type="radio" id="3C" value="C" name="3">
+                <label for="3C">C</label>
+                <p class="options">   Mizoram</p>
+                <br>
+                <hr>
+                <input type="radio" id="3D" value="D" name="3">
+                <label for="3D">D</label>
+                <p class="options">  Maharashtra</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-mcq">
+        <div class="card-title" style="margin-left: 50px ; margin-right: 50px">
+            <br>
+            <p class ="ques">Question 4</p>
+            <p>The 'Dalong Village' covering an area of 11.35 sq. km. has recently (May 2017) been declared as Biodiversity Heritage Site under Section 37(1) of Biological Diversity Act, 2002. The village is situated in the Indian State of -</p>
+            <div class="radio-choice">
+                <input type="radio" id="4A" value="A" name="4">
+                <label for="4A">A</label>
+                <p class="options">    Manipur</p>
+                <hr>
+                <input type="radio" id="4B" value="B" name="4">
+                <label for="4B">B</label>
+                <p class="options">    Madhya Pradesh </p><span class="ans"></span>
+                <br>
+                <hr>
+                <input type="radio" id="4C" value="C" name="4">
+                <label for="4C">C</label>
+                <p class="options">   Mizoram</p>
+                <br>
+                <hr>
+                <input type="radio" id="4D" value="D" name="4">
+                <label for="4D">D</label>
+                <p class="options">  Maharashtra</p>
+            </div>
+        </div>
+
+    </div>
+         <button class="btn btn-primary" type="submit" style="width: 100px ; height: 30px;" onclick="calscore()" data-toggle="modal" data-target="#exampleModal">Submit Test</button>
+    <br>
+    <br>
+
+    <!-- Button trigger modal -->
+<!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">-->
+<!--        Launch demo modal-->
+<!--    </button>-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div style="display: inline" class="modal-title" id="exampleModalLabel">
+                        <h3 style="display: inline">Practice Test Completed</h3>
+                        <div class="ml-auto" style="position: absolute;right: 0;">
+                            <h3 style="display: inline" class="percentage"></h3><h3 style="display: inline"> %</h3>
+                        </div>
+                        <br>
+                        <h3 style="display: inline">You have scored</h3> <h3 style="display: inline" class="percentage"> percentage </h3><h3 style="display: inline"> % in the test</h3>
+
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 style="display: inline">Total Question Attempted :</h4><h4 style="display: inline" id = "totAttempt">Attempt</h4>
+                    <br>
+                    <h4 style="display: inline">Total Question Correct :</h4><h4 style="display: inline" id="totCorrect">Attempt</h4>
+                    <br>
+                    <h4 style="display: inline">Total Score :</h4><h4 style="display: inline" id="totScore">Attempt</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="correctAns()" >Check Answers</button>
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='assignment.html'">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    window.onload = function () {
+        $('#exampleModal2').modal('show')
+    }
+</script>
+</body>
+</html>
